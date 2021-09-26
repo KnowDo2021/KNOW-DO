@@ -18,14 +18,26 @@
 }
 .presentation .button{
 	font-size: 24px;
-	font-weight: bold;
 	padding: 4px 25px;
+}
+.name{
+	font-size: 22px !important;
+	padding-top: 15px;
+	text-align: center;
+}
+.cargo{
+	font-size: 16px;
+	text-align: center;
 }
 /*---------------------------*/
 #nosotros{
 	padding: 50px 0px;
 }
-#nosotros h2, #alianzas h2{
+.miembros{
+	width: 100%;
+	padding: 0px auto;
+}
+#nosotros h2, #alianzas h2, #mentores h2{
 	font-size: 3vw;
 	text-align: center;
 }
@@ -37,23 +49,33 @@
 #nosotros .miembros{
 	padding: 30px 0px;
 }
-#nosotros .photo-item, #alianzas .ally-item{
-	padding: 12px;
+#nosotros .photo-item{
+	padding: 20px;
 }
 #nosotros .miembros img{
 	border: 1px solid rgb(172, 172, 172);
 	border-radius: 50%;
 	cursor:pointer;
+	}
+.name i{
+	color:#0A4ED3 !important;
 }
 /*-----------------------*/
 #banner{
 	padding: 40px 0px;
+	background: none;
+	transition: all ease 3500ms;
 }
-#banner img{
+#image-banner{
 	width: 100%;
+	height: 370px;
+	background-image: url('Banner1.png');
+	background-position: right;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 /*-----------------------*/
-#alianzas{
+#alianzas, #mentores{
 	padding: 50px 0px;
 }
 .aliados{
@@ -62,19 +84,61 @@
 .aliados img{
 	cursor:pointer;
 }
+#alianzas .ally-item{
+	padding: 14px;
+}
 /*-----------------------*/
+#mentores{
+	padding:70px 0px;
+}
+.each-mentor{
+	padding: 15px;
+	height:min-content;
+}
+.each-mentor .photo img{
+	border-radius: 50%;
+}
+.mentor-profile{
+	padding: 10px 20px;
+	height: 100px;
+}
+.mentor-profile i{
+	padding-right: 8px;
+}
+.name-mentor{
+	color: #241A75;
+	padding-bottom: 6px;
+}
+.name-mentor i{
+	color: #241A75;
+}
+
+/*-----------------------*/
+@media (max-width: 1199px){
+	.photo{
+		width: 90%;
+		padding-left: 5%;
+	}
+}
 
 @media (max-width: 991px){
 	.presentation h1{font-size:35px;}
-	#nosotros h2, #alianzas h2{font-size: 30px;}
+	#nosotros h2, #alianzas h2, #mentores h2{font-size: 30px;}
 	.summarize{
 		padding-bottom:30px;
 	}
 	#formulario .space{
 		padding-right: 0px;
 	}
+	#image-banner{height:300px;}
 }
 @media (max-width: 600px){
 	.presentation h1{font-size:30px;}
-	#nosotros h2, #alianzas h2{font-size: 25px;}
+	#nosotros h2, #alianzas h2, #mentores h2{font-size: 25px;}
+	#image-banner{height:200px;}
+	.name, .name-mentor{font-size: 18px !important;}
+	.miembros{width:75%}
+}
+@media (max-width: 500px){
+	#image-banner{height: 150px;}
 }
