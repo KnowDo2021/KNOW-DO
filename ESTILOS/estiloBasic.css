@@ -11,17 +11,18 @@ body::-webkit-scrollbar-thumb{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-	font-family: 'Quicksand', sans-serif;
 }
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+	font-family: 'Quicksand'!important;
+
 }
 .primaryColor{
 	color:#0A4ED3 !important;
 }
 .normalText{
-	color: #545454;
+	color: #545454 !important;
 }
 .button{
 	background-color: #0A4ED3;
@@ -59,6 +60,9 @@ section{
 	align-items: center;
 	transition: all ease 350ms;
 }
+.font-bold{
+	font-weight: bold;
+}
 /*------------Menu------------*/
 .menu{
 	background: #241A75;
@@ -83,10 +87,6 @@ section{
 	margin: 10px;
 }
 .all .enlaces{
-	display: inline-block;
-	text-align: right;
-}
-.all .enlaces{
 	list-style: none;
 	display: flex;
 	flex-direction: row;
@@ -108,7 +108,7 @@ section{
 /*-----------footer-----------*/
 #footer{
 	padding-bottom: 40px;
-	align-items: baseline;
+	align-items:initial;
 }
 .summarize h3{
 	font-size: 26px;
@@ -139,50 +139,43 @@ section{
 	color: #0e76a8;
 	border: 1px solid #0e76a8;
 }
-#formulario{
-	margin: 0px auto;
-	width: 100%;
+.info-contacto{
+	padding: 0px 15px;
 }
-#formulario i{
-	color: #545454;
-	padding-right: 8px;
-}
-#formulario h3{
+.info-contacto h3{
 	padding-bottom: 8px;
 }
-#formulario .space{
-	padding-right: 50px;
+.info-contacto i{
+	padding-right: 8px;
+	color: #285AEB;
 }
-form{
-	display: flex;
-	flex-wrap: wrap;
-}
-#nombre, #correo{
-	height: 25px;
-}
-input, textarea{	
+.all-services{
 	width: 100%;
-	border: none;
-	background-color: #E8ECE8;
-	color: #1d1d1d;
-	margin-bottom: 20px;
+	height: 140px;
 }
-textarea{
-	min-height: 80px;
+.images-footer{
+	width: 33.3%;
+	height: 100%;
+	background: none;
 }
-label{
-	font-size: 18px;
-	margin-bottom: 15px;
+.div1{
+	background-image: url('service1.jpg');
+	background-size: cover;
+	clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+	transform:translateX(28px);
 }
-#send{	
-	width: 40%;
-	margin-left: 30%;
-	color: white;
-	padding: 3px 8px;
-	font-size: 18px;
-	font-weight: bold;
-	cursor:pointer;
+.div2{
+	background-image: url('service2.jpg');
+	background-size: cover;
+	clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+	transform:translateX(14px);
 }
+.div3{
+	background-image: url('service3.jpg');
+	background-size: cover;
+	clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
 .copyright{
   background: #E8ECE8;
   width: 100%;
@@ -217,6 +210,7 @@ label{
 	.col-sm-3{width: 25%;}
 
 	h1{font-size:20px;}
+	.all-services{ visibility: hidden;}
 }
 @media (max-width: 767px){
 	.col-xs-12{width: 100%;}
@@ -224,4 +218,22 @@ label{
 	.col-xs-6{width: 50%;}
 	.col-xs-4{width: 33.3%;}
 	.col-xs-3{width: 25%;}
+
+	.all-services{ visibility: hidden;}
+}
+@media (max-width: 500px){
+	.all .enlaces{
+		overflow-x: scroll;
+	}
+	.info-contacto, .summarize{
+		width: 100%;
+		padding: 0px auto;
+		text-align: center;
+	}
+	.info-contacto{
+		padding: 0px;
+	}
+	.copyright p{
+		font-size: 14px;
+	}
 }
