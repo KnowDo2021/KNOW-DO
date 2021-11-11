@@ -103,7 +103,10 @@ section{
 	padding: 0px 20px;
 }
 .menu .all .enlaces{
-	transition: ease all 4500ms;
+	transition: ease all 5000ms;
+}
+.all .enlaces a :hover{
+	font-weight: bold;
 }
 /*-----------footer-----------*/
 #footer{
@@ -127,11 +130,13 @@ section{
 	padding: 6px 10px;
 	background: #1A4789;
 	color: white;
+	border: 1px solid #1A4789;
 }
 .redes .fa-instagram{
 	padding: 6px;
 	background: #285AEB;
 	color: white;
+	border: 1px solid #285AEB;
 }
 .redes .fa-linkedin-in{
 	padding: 6px;
@@ -139,6 +144,13 @@ section{
 	color: #0e76a8;
 	border: 1px solid #0e76a8;
 }
+
+.redes .fa-facebook-f:hover , .redes .fa-instagram:hover, .redes .fa-linkedin-in:hover{
+	background: #020141;
+	color: white;
+	border: 1px solid #020141;
+}
+
 .info-contacto{
 	padding: 0px 15px;
 }

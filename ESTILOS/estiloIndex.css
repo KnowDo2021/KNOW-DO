@@ -1,3 +1,37 @@
+.slideshow-container{ 
+	width: 100%;
+  	height: 100%;
+  	position: relative;
+  	margin: 15px auto 20px auto;
+}
+.Slides-transition{ 
+	display: none;
+}
+.Slides-transition img{ 
+	width: 100%;
+	border: none;
+}
+.prev, .next{
+  	cursor: pointer;
+  	position: absolute;
+  	top: 40%;
+  	color: rgba(0, 0, 0, .8);
+  	padding: 0;
+  	background: none;
+  	transition: 0.5s ease;
+}
+.slideshow-container .next{
+  	right: -70px;
+}
+.slideshow-container .prev{
+  	left: -70px;
+}
+.prev:hover, .next:hover {
+	background: white;
+	color:#0A4ED3 !important;
+}
+
+/*---------------------------------*/
 #inicio{
 	margin-top: 70px;
 	padding: 50px 0px;
